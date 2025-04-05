@@ -10,7 +10,7 @@ import med.loov.api.endereco.Endereco;
 @Table(name = "medicos")
 @Entity(name = "Medico")
 @Getter
-@NoArgsConstructor
+@NoArgsConstructor //utilizando o Lombok para criar construtor sem argumentos
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id") //utilizando o Lombok para gerar o equals e o hashCode e demais metodos
 public class Medico {
@@ -27,6 +27,7 @@ public class Medico {
     @Embedded
     private Endereco endereco;
 
+
     public Medico(DadosCadastroMedico dados) {
         this.nome = dados.nome();
         this.email = dados.email();
@@ -35,4 +36,5 @@ public class Medico {
         this.especialidade = dados.especialidade();
         this.endereco = new Endereco(dados.endereco());
     }
+
 }
