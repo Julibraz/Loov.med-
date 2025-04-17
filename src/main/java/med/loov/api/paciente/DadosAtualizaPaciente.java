@@ -1,0 +1,15 @@
+package med.loov.api.paciente;
+
+
+import jakarta.validation.constraints.NotNull;
+import med.loov.api.endereco.DadosEndereco;
+
+public record DadosAtualizaPaciente(
+    @NotNull
+    Long id,
+    String nome,
+    String email,
+    String telefone,
+    DadosEndereco endereco
+) {
+}
