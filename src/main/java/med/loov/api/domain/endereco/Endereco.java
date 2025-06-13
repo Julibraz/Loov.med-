@@ -1,4 +1,4 @@
-package med.loov.api.endereco;
+package med.loov.api.domain.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package med.loov.api.paciente;
+package med.loov.api.domain.paciente;
 
 public record DadosListagemPaciente(String nome, String email, String telefone, String cpf) {
 

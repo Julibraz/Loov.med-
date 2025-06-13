@@ -1,11 +1,11 @@
-package med.loov.api.medico;
+package med.loov.api.domain.medico;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
-import med.loov.api.endereco.DadosEndereco;
+import med.loov.api.domain.endereco.DadosEndereco;
 
 public record DadosCadastroMedico(
         @NotBlank //anotação bean validation para garantir que o campo nao seja nulo e nem vazio
